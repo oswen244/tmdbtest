@@ -29,6 +29,12 @@ class MovieRecyclerAdapter(private var items: ArrayList<Movie>,
         fun onItemClick(position: Int)
     }
 
+    fun replaceData(items: ArrayList<Movie>){
+        this.items.clear()
+        this.items.addAll(items)
+        notifyDataSetChanged()
+    }
+
     class ViewHolder(private var binding: RvItemMovieBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(mov: Movie, listener: OnItemClickListener?){
             binding.movie = mov
