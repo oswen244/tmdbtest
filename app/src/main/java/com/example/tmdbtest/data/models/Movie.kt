@@ -1,4 +1,4 @@
-package com.example.tmdbtest.data
+package com.example.tmdbtest.data.models
 
 class Movie(var id: Int,
             var originalTitle: String,

@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import com.example.tmdbtest.R
-import com.example.tmdbtest.data.Movie
+import com.example.tmdbtest.data.models.Movie
 import com.example.tmdbtest.databinding.ActivityHomeBinding
 import com.example.tmdbtest.viewModel.HomeViewModel
 

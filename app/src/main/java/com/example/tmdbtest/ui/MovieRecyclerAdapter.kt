@@ -3,7 +3,7 @@ package com.example.tmdbtest.ui
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.tmdbtest.data.Movie
+import com.example.tmdbtest.data.models.Movie
 import com.example.tmdbtest.databinding.RvItemMovieBinding
 
 class MovieRecyclerAdapter(private var items: ArrayList<Movie>,
