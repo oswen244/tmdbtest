@@ -24,13 +24,16 @@ class HomeActivity : AppCompatActivity(), MovieRecyclerAdapter.OnItemClickListen
         binding.viewModel = viewModel
         binding.executePendingBindings()
 
+        viewModel.loadMovies()
+
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = movieRecyclerAdapter
 
         viewModel.movies.observe(this,
             Observer<ArrayList<Movie>> {
                 it?.let { movieRecyclerAdapter.replaceData(it) }
-            })
+            }
+        )
     }
 
     override fun onItemClick(position: Int) {
